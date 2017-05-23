@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>内容页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+		margin:0 auto;
+		font-size: 12px;
+		color: #522a06;
+		padding: 0px;
+		font-style: '宋体'	
+		}
+		li{
+			list-style: none;
+		}
+		a:link{
+			color: #522a06;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration:underline;
+		}
+		body{
+			background-image: url(images/bodybg.gif);
+			background-repeat: repeat-x;
+		}
+		#header{
+			height: 205px;
+			background-image: url(images/bg.gif);
+			background-repeat: repeat-x;
+		}
+		#banner{
+			height: 164px;
+			width: 1000px;
+			margin:0 auto;
+		}
+		img.logo{
+			position: relative;
+			top: 38px;
+			left: 25px;
+		}
+		#nav{
+			height: 40px;
+			background-image: url(images/nav.jpg);
+		}
+		div.nav_body{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		div.nav_content{
+			margin-left: 200px;
+			width: 800px;
+			display: inline-block;
+		}
+		div.nav_search{
+			width: 195px;
+			height: 21px;
+			display: inline-block;
+			margin-top: 8px;
+		}
+		ul.nav_content{
+			width: 800px;
+			font-weight: 600;
+			list-style: none;
+		}
+		li.nav_content {
+			color: #fff;
+			display: inline-block;
+			margin-right: 6px;
+
+		}
+		a.nav_content:hover{
+			color: #f9f603;
+			text-decoration: none;
+		}
+		a.nav_content{
+			color: #fff;
+			line-height: 40px;
+		}
+		a.first:hover{
+			color: #f9f603;
+			text-decoration: none;
+		}
+		a.first{
+			color: #f9f603;
+		}
+	    .input_text{
+			width: 140px;
+			height: 19px;
+			background-color: #f8f5ee;
+		}
+		.input_button{
+			width: 44px;
+			height: 21px;
+			background-color: #000;
+			color: #fff;
+			border: 1px solid #f8f5ee;
+		}
+		#content{
+			width: 1000px;
+			overflow: hidden;
+			margin:0 auto;
+		}
+		div.content_left{
+			width: 700px;
+			float: left;
+		}
+		div.content_right{
+			width: 280px;
+			float: left;
+			margin: 10px;
+		}
+		div.weizhi{
+			height: 40px;
+			line-height: 40px;
+			margin-left: 43px;
+		}
+		div.left_top_1{
+			font-size: 16px;
+			height: 45px;
+			line-height: 45px;
+			text-align: center;
+			border-bottom: 1px solid #c9baa5;
+			font-weight: 600;
+		}
+		div.left_top_2{
+			font-size: 12px;
+			text-align: center;
+			color: #757575;
+			margin: 10px;
+		}
+		div.left_mid{
+			line-height: 28px;
+			padding:10px;
+			font-size: 14px;
+			border-bottom: 1px solid #c9baa5;
+		}
+		p.left_mid{
+			text-indent: 2em;
+			margin-top: 5px;
+		}
+		img.left_mid{
+			margin: 20px;
+		}
+		div.left_down{
+			height: 40px;
+			line-height: 40px;
+			font-size:13px; 
+		}
+		a.left_down{
+			margin-right: 40px;
+			color: #844004;
+			font-size: 13px;
+		}
+		div.right_up{
+			border: 1px solid #c9baa5;
+			background-image: url(images/bg.png);
+			margin-bottom: 20px;
+		}
+		div.gengxin{
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		li.gengxin{
+			height: 30px;
+			margin-left: 13px;
+		}
+		div.right_down{
+			width: 280px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		div.zhanting{
+			margin-top: 25px;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+		div.mingjia{
+			background-image: url(images/show_bg.png);
+			height: 362px;
+
+		}
+		img.pic{
+			margin-left: 25px;
+			margin-top: 25px;
+		}
+		div.jieshao{
+			margin-left: 25px;
+			margin-top: 15px;
+			margin-right: 30px;
+			line-height: 20px;
+		}
+		span.ouyang{
+			font-weight: 600;
+			color: #b70000;
+		}
+		#footer{
+			height: 105px;
+			background-image: url(images/foot.gif);
+			clear: both;
+			
+		}
+		div.foot{
+			margin: 0 auto;
+			width: 500px;
+		}
+		li.foot{
+			display: inline-block;
+			margin: 4.2px;
+			font-weight: 600;
+		}
+		p.foot{
+			text-align: center;
+		}
+		</style>
+</head>
+<body>
+<!--页头部分-->
+<div id="header">
+<!--banner-->
+	<div id="banner">
+		<img src="images/logo.png" class="logo" />
+	</div>
+<!--导航栏和搜索框-->
+    <div id="nav">
+    	<div id="nav_body">
+    		<!--导航栏-->
+    		<div class="nav_content">
+    	    <ul class="nav_content">
+			<li class="nav_content"><a href="#" class="first">首页</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">中心概况</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">培训动态</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">学术争鸣</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">书坛新闻</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">名家展厅</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">燕都风采</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">经典解读与示范</a></li>
+			<li class="nav_content"><a href="#" class="nav_content">神言互动</a></li>
+			</ul>
+    	</div>
+    	<div class="nav_search">
+    			<form action="" method="" class="nav_search">
+    				<input type="text" name="sougo" class="input_text">
+    				<input type="button" name="搜索" value="搜索" class="input_button">
+    			</form>
+    	</div>
+    </div>
+</div>
+<div>
+	<!--页面主体部分-->
+	<div id="content">
+	<div class="weizhi">当前位置：首页>书坛新闻</div>
+		<div class="content_left">
+			<div class="left-top">
+				<div class="left_top_1">
+					河北省书协召开2016年工作会议
+				</div>
+				<div class="left_top_2">
+					河北文艺网&nbsp;2016-03-15
+				</div>
+			</div>
+			<div class="left_mid">
+				<p class="left_mid">3月11日，“2016河北省书法家协会工作会议”在石家庄召开。河北省文联党组书记解晓勇、中国书协副主席、河北省书协主席刘金凯、河北省委宣传部文艺处长王振儒、河北省书协副主席兼秘书长刘月卯、副主席郎岗峰、陈茂才、任桂子、范硕、肖建科、吴占良等、河北省书协主席团委员、副秘书长、各地市书协负责人、优秀书家代表近百人参加了会议。刘月卯主持会议。</p>
+				<img src="images/huiyi.jpg" class="left_mid">
+				<p class="left_mid">
+					会议首先传达学习了中宣部部长刘奇葆在中国书协第七次全国代表大会开幕式上的讲话摘要、省委常委、宣传部长田向利在全省宣传工作位以上的讲话摘要。王振儒代表省委宣传部讲话。
+				</p>
+				<p class="left_mid">会议随后对2015年度先进单位和先进个人进行了表彰。廊坊、沧州、石家庄、保定、邢台、承德、秦皇岛、邯郸等市书法家协会被授予先进单位，省直、唐山、张家口、衡水等继承书协被授予服务基层先进单位。</p>
+			</div>
+			<div class="left_down">
+				上一篇：<a href="#" class="left_down">弘扬优秀传统文化是媒体的责任</a>
+				&nbsp;&nbsp;&nbsp;
+				下一篇：<a href="#" class="left_down">河北省文联2016年部门预算数据分析</a>
+			</div>
+			<br/>
+		</div>
+		<div class="content_right">
+			<div class="right_up">
+				<div class="gengxin">
+				<img src="images/news.png">
+				</div>
+				<ul>
+					<li class="gengxin">河北省群众书法大展</li>
+					<li class="gengxin">河北文联2016年预算情况</li>
+					<li class="gengxin">河北省书协在第十一届书法展上创造佳绩</li>
+					<li class="gengxin">省书协召开机关作风整顿动员大会</li>
+					<li class="gengxin">河北省书协启动书法进万家送万福活动</li>
+				</ul>
+			</div>
+			<div class="right_down">
+				<div class="zhanting">
+					<img src="images/show.png">
+				</div>
+				<div class="mingjia">
+					<div>
+						<img src="images/mingjia.jpg" class="pic">
+					</div>
+					<div class="jieshao">
+						<p><span class="ouyang">欧阳中石</span>山东省肥城市人，著名文化学者、书法家、书法教育家。早年拜在京剧大师奚啸伯的门下。现任首部师范大学教授、博士生导师、中国书法文化研究所所长，北京唐风美术馆名誉馆长。</p>
+						<a href="#"><img src="images/before.png"></a>
+						<a href="#"><img src="images/next.png"></a>
+						<a href="#"><img src="images/view.png"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--页脚部分-->
+<div id="footer">
+	<div class="foot">
+		<ul class="foot">
+			<li class="foot"><a href="#">电子信箱</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">设为首页</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">在线调查</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">加入收藏</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">网站地图</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">关于我们 </a></li>
+		</ul>
+		<img src="images/line.jpg">
+		<p class="foot">Copyright 2013-2014 Hebshufajia.com,ALL Rights Reserved</p>
+		<p class="foot">冀ICP备05067795号 冀公网安备110402440008号</p>
+	</div>
+	</div>
+</div>
+</body>
+</html>

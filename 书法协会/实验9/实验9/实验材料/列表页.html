@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>列表页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+		margin:0 auto;
+		font-size: 12px;
+		color: #522a06;
+		padding: 0px;	
+		}
+		a:link{
+			color: #522a06;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		body{
+			background-image: url(images/bodybg.gif);
+		}
+		#header{
+			height: 205px;
+			background-image: url(images/bg.gif);
+			background-repeat: repeat-x;
+		}
+		#banner{
+			height: 164px;
+			width: 1000px;
+			margin:0 auto;
+		}
+		img.logo{
+			position: relative;
+			top: 38px;
+			left: 25px;
+		}
+		#nav{
+			height: 40px;
+			background-image: url(images/nav.jpg);
+		}
+		div.nav_body{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		div.nav_content{
+			margin-left: 200px;
+			width: 800px;
+			display: inline-block;
+		}
+		div.nav_search{
+			width: 195px;
+			height: 21px;
+			display: inline-block;
+			margin-top: 8px;
+		}
+		ul.nav_content{
+			width: 800px;
+			font-weight: 600;
+			list-style: none;
+		}
+		li.nav_content {
+			color: #fff;
+			display: inline-block;
+			margin-right: 6px;
+
+		}
+		a.nav_content:hover{
+			color: #f9f603;
+			text-decoration: none;
+		}
+		a.nav_content{
+			color: #fff;
+			line-height: 40px;
+		}
+		a.first:hover{
+			color: #f9f603;
+			text-decoration: none;
+		}
+		a.first{
+			color: #f9f603;
+		}
+	    .input_text{
+			width: 140px;
+			height: 19px;
+			background-color: #f8f5ee;
+		}
+		.input_button{
+			width: 44px;
+			height: 21px;
+			background-color: #000;
+			color: #fff;
+			border: 1px solid #f8f5ee;
+		}
+		#content{
+			width: 1000px;
+			margin: 0 auto;
+			clear: both;
+		}
+		#content_left{
+			width: 220px;
+			float: left;
+		}
+		div.weizhi{
+			height: 40px;
+			line-height: 40px;
+			margin-left: 43px;
+		}
+		div.content_left_1{
+			width: 200px;
+			height: 230px;
+			background-color: #ece8dd;
+			border: 1px #feebd0 groove;
+			float: left;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		ul.pxdt{
+			list-style: none;
+		}
+		p.zhaosheng{
+			background-image: url(images/menubg.gif);
+			font-size: 14px;
+			color: #b2001f;
+			text-align: center;
+			width: 100px;
+			height: 30px;
+			font-weight:900;
+		}
+		li.pxdt{
+			line-height: 30px;
+			font-weight:900;
+			text-align: center;
+			margin: 0px;
+			font-size: 14px;
+		}
+		div.content_left_2{
+			background-color: #ece8dd;
+			border: 1px #feebd0 groove;
+			clear: both;
+			float: left;
+			width: 200px;
+			margin-bottom: 20px;
+		}
+		img.left_2{
+			text-align: center;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		li.left_2{
+			list-style: none;
+			text-align: center;
+			line-height: 30px;
+		}
+		div.content_left_3{
+			clear: both;
+			float: left;
+			margin-bottom: 10px; 
+		}
+		#content_right{
+			width: 780px;
+			float: left;
+			margin-top: 20px;
+		}
+		div.content_right_top{
+			width: 760px;
+			background-color: #ece8dd;
+			height: 45px;
+			background-image: url(images/listtitle.png);
+		}
+		span.right_top{
+			position: relative;
+			left: 55px;
+			top: 10px;
+			font-size: 20px;
+			color: #b2001f;
+			font-weight: 600;
+		}
+		div.content_right_buttom{
+			width: 740px;
+			margin-left: 30px;			
+			margin-top: 15px;
+		}
+		span.right_buttom{
+			float: right;
+		}
+		li.right_buttom{
+			line-height: 25px;
+			font-size: 22px;
+		}
+		div.yema{
+			width: 600px;
+			height: 25px;
+			margin: 0 auto;
+		}
+		div.no1{
+			width: 35px;
+			height: 25px;
+			float: left;
+			text-align: center;
+			margin-left: 5px;
+			margin-bottom: 20px;
+			font-weight: 600;
+			font-size: 20px;
+		}
+		div.no3{
+			width: 35px;
+			height: 25px;
+			border: 1px solid #522a06;
+			float: left;
+			text-align: center;
+			margin-left: 5px;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		#footer{
+			height: 105px;
+			background-image: url(images/foot.gif);
+			clear: both;
+			
+		}
+		div.foot{
+			margin: 0 auto;
+			width: 500px;
+		}
+		li.foot{
+			display: inline-block;
+			margin: 4.2px;
+			font-weight: 600;
+		}
+		p.foot{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<!--页头部分-->
+<div id="header">
+<!--banner-->
+	<div id="banner">
+		<img src="images/logo.png" class="logo" />
+	</div>
+<!--导航栏和搜索框-->
+    <div id="nav">
+    	<div id="nav_body">
+    		<!--导航栏-->
+    		<div class="nav_content">
+    	    <ul class="nav_content">
+			<li class="nav_content"><a href="#" class="first">首页</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">中心概况</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">培训动态</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">学术争鸣</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">书坛新闻</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">名家展厅</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">燕都风采</a></li>
+			<li class="nav_content">|</li>
+			<li class="nav_content"><a href="#" class="nav_content">经典解读与示范</a></li>
+			<li class="nav_content"><a href="#" class="nav_content">神言互动</a></li>
+			</ul>
+    	</div>
+    	<div class="nav_search">
+    			<form action="" method="" class="nav_search">
+    				<input type="text" name="sougo" class="input_text">
+    				<input type="button" name="搜索" value="搜索" class="input_button">
+    			</form>
+    	</div>
+    </div>
+</div>
+</div>
+<!--页面主体-->
+<div id="content">
+	<div class="weizhi">当前位置：首页&nbsp;>&nbsp;培训动态</div>
+<div id="content_left">
+	<div class="content_left_1">
+		<img src="images/pxdt.png">
+		<p class="zhaosheng">招生启事</p>
+		<ul class="pxdt">
+			<li class="pxdt"><a href="#">公告发布</a></li>
+			<li class="pxdt"><a href="#">师生作品</a></li>
+			<li class="pxdt"><a href="#">艺考咨询</a></li>
+			<li class="pxdt"><a href="#">授课现场</a></li>
+		</ul>
+	</div>
+	<div class="content_left_2">
+		<img src="images/news.png" class="left_2">
+		<ul>
+			<li class="left_2"><a href="#">普及书法教育</a></li>
+			<li class="left_2"><a href="#">规范书法考级</a></li>
+			<li class="left_2"><a href="#">探究书法之道</a></li>
+			<li class="left_2"><a href="#">成就书法大家</a></li>
+		</ul>
+	</div>
+	<div class="content_left_3">
+		<img src="images/tel.gif">
+	</div>
+</div>
+<div id="content_right">
+	<div class="content_right_top">
+		<span class="right_top">招生启事</span>
+	</div>
+	<div class="content_right_buttom">
+		<ul>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+			<li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+		   <li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+		   <li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+		   <li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+		   <li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+		   <li class="right_buttom"><a href="#">2016年上半年书法等级考试报名通知</a><span class="right_buttom">2016-03-15</span></li>
+		   </ul>
+	</div>
+	<div class="yema">
+		<div class="no1"><a href="#"><</a></div>
+		<div class="no1"><a href="#">1</a></div>
+		<div class="no3"><a href="#">2</a></div>
+		<div class="no3"><a href="#">3</a></div>
+		<div class="no3"><a href="#">4</a></div>
+		<div class="no3"><a href="#">5</a></div>
+		<div class="no3"><a href="#">6</a></div>
+		<div class="no3"><a href="#">7</a></div>
+		<div class="no1"><a href="#">...</a></div>
+		<div class="no3"><a href="#">199</a></div>
+		<div class="no3"><a href="#">200</a></div>
+		<div class="no3"><a href="#">></a></div>
+	</div>
+</div>
+</div>
+<!--页脚部分-->
+<div id="footer">
+	<div class="foot">
+		<ul class="foot">
+			<li class="foot"><a href="#">电子信箱</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">设为首页</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">在线调查</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">加入收藏</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">网站地图</a></li>
+			<li class="foot">|</li>
+			<li class="foot"><a href="#">关于我们 </a></li>
+		</ul>
+		<img src="images/line.jpg">
+		<p class="foot">Copyright 2013-2014 Hebshufajia.com,ALL Rights Reserved</p>
+		<p class="foot">冀ICP备05067795号 冀公网安备110402440008号</p>
+	</div>
+	</div>
+</div>
+</body>
+</html>
